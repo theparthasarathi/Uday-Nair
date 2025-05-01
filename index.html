@@ -36,7 +36,9 @@
   ======================================================== -->
 </head>
 
-<body class="index-page">
+<!--body class="index-page"-->
+<body class="index-page" style="background-color: #bcbdbc;">
+
 
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container position-relative d-flex align-items-center justify-content-between">
@@ -85,26 +87,64 @@
 
   <main class="main">
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero section light-background">
-
-      <div class="container">
-        <div class="row gy-4 justify-content-center justify-content-lg-between">
-          <div class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center">
-            <h1 data-aos="fade-up">Leadership is not just about the decisions you make<br>It's about the energy you carry, the conversations you shape, and the trust you build.</h1>
-            <p data-aos="fade-up" data-aos-delay="100">At the heart of it all is your Energy Exchange Quotient (EEQ™) — the unseen force that influences how you connect, how you communicate, and how you lead.</p>
-            <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
-              <a href="#book-a-table" class="btn-get-started">Booka a Call</a>
-              <!--a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a-->
-            </div>
-          </div>
-          <div class="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-out">
-            <img src="assets/img/hero-img.jpg" class="img-fluid animated" alt="">
-          </div>
-        </div>
+<!-- Hero Section -->
+<section id="hero" class="hero section bg-light py-5">
+  <div class="container">
+    <div class="row gy-4 align-items-center justify-content-center justify-content-lg-between">
+      <!-- Text Column -->
+      <div class="col-lg-6 order-2 order-lg-1" data-aos="fade-up">
+        <h1
+          style="
+            font-family: 'Inter', sans-serif;
+            font-size: 2.25rem;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            line-height: 1.3;
+            margin-bottom: 1.5rem;
+          "
+        >
+          “Leadership is not just about the decisions you make.<br>
+          It's about the energy you carry, the conversations you shape, and the trust you build.”
+        </h1>
+        <p
+          style="
+            font-family: 'Inter', sans-serif;
+            font-size: 1.125rem;
+            font-weight: 300;
+            letter-spacing: 0.5px;
+            color: #6c757d;
+            margin-bottom: 2rem;
+          "
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          At the heart of it all is your Energy Exchange Quotient (EEQ™) — the unseen force that influences how you connect,
+          how you communicate, and how you lead.
+        </p>
+        <a
+          href="https://calendly.com/reachunair/30min"
+          class="btn btn-primary"
+          style="
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            letter-spacing: 0.5px;
+            padding: 0.75rem 1.5rem;
+          "
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          Book a Call
+        </a>
       </div>
+      <!-- Image Column -->
+      <div class="col-lg-5 order-1 order-lg-2 text-center" data-aos="zoom-out">
+        <img src="assets/img/hero-img.jpg" class="img-fluid rounded shadow-lg" alt="Hero Image">
+      </div>
+    </div>
+  </div>
+</section><!-- End Hero Section -->
 
-    </section><!-- /Hero Section -->
+
 
     <!-- About Section -->
     <section id="about" class="about section">
@@ -112,7 +152,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <!--h2>About Us<br></h2-->
-        <p><span>Learn More</span> <!--span class="description-title">About Us</span--></p>
+        <p><span>Learn More</span> <span class="description-title">About Us</span></p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -213,191 +253,206 @@ I believe that great leadership starts from within — it’s about mastering yo
 
 
     <!-- Help Section -->
-<section id="help" class="help section">
-  <!-- Section Title -->
-  <div class="container section-title" data-aos="fade-up">
-    <h2>How Can We Help You?</h2>
-  </div><!-- End Section Title -->
+<section id="help" class="help section bg-white py-5">
+  <div class="container section-title text-center" data-aos="fade-up">
+    <h1>How Can We Help You?</h1>
+  </div>
 
-  <div class="container">
-    <!-- Nav Tabs -->
-    <ul class="nav nav-tabs d-flex justify-content-center" role="tablist" data-aos="fade-up" data-aos-delay="100">
-      <li class="nav-item" role="presentation">
-        <button
-          class="nav-link active"
-          id="help-coaching-tab"
-          data-bs-toggle="tab"
-          data-bs-target="#help-coaching"
-          type="button"
-          role="tab"
-          aria-controls="help-coaching"
-          aria-selected="true"
-        >Coaching</button>
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <!-- Nav Pills -->
+    <ul class="nav nav-pills justify-content-center mb-5" role="tablist">
+      <li class="nav-item me-2">
+        <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#pill-coaching" type="button" role="tab">
+          <i class="bi bi-briefcase-fill me-1"></i> Coaching
+        </button>
       </li>
-      <li class="nav-item" role="presentation">
-        <button
-          class="nav-link"
-          id="help-communication-tab"
-          data-bs-toggle="tab"
-          data-bs-target="#help-communication"
-          type="button"
-          role="tab"
-          aria-controls="help-communication"
-          aria-selected="false"
-        >Communication</button>
+      <li class="nav-item me-2">
+        <button class="nav-link" data-bs-toggle="pill" data-bs-target="#pill-communication" type="button" role="tab">
+          <i class="bi bi-chat-dots-fill me-1"></i> Communication
+        </button>
       </li>
-      <li class="nav-item" role="presentation">
-        <button
-          class="nav-link"
-          id="help-teams-tab"
-          data-bs-toggle="tab"
-          data-bs-target="#help-teams"
-          type="button"
-          role="tab"
-          aria-controls="help-teams"
-          aria-selected="false"
-        >Teams</button>
+      <li class="nav-item">
+        <button class="nav-link" data-bs-toggle="pill" data-bs-target="#pill-teams" type="button" role="tab">
+          <i class="bi bi-people-fill me-1"></i> Teams
+        </button>
       </li>
-    </ul><!-- End Nav Tabs -->
+    </ul>
 
-    <!-- Tab Content -->
-    <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
+    <!-- Tab Panes -->
+    <div class="tab-content">
 
       <!-- Coaching Pane -->
-      <div
-        class="tab-pane fade show active"
-        id="help-coaching"
-        role="tabpanel"
-        aria-labelledby="help-coaching-tab"
-      >
-        <div class="tab-header text-center mb-4">
-          <h3>Coaching</h3>
+      <div class="tab-pane fade show active" id="pill-coaching" role="tabpanel">
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100 text-center border-0 shadow-sm">
+              <div class="card-body">
+                <i class="bi bi-star-fill display-4 text-primary mb-3"></i>
+                <h5 class="card-title">Executive Coaching</h5>
+                <p class="card-text">
+                  Designed for senior leaders seeking to enhance their leadership presence, decision-making, and strategic vision. Together, we’ll help you lead with clarity, confidence, and impact by harnessing your Energy Exchange Quotient (EEQ™).
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 text-center border-0 shadow-sm">
+              <div class="card-body">
+                <i class="bi bi-graph-up-arrow display-4 text-primary mb-3"></i>
+                <h5 class="card-title">Career Coaching</h5>
+                <p class="card-text">
+                  Whether you’re transitioning into a new role, aiming for career advancement, or seeking greater work-life balance, I’ll help you develop a roadmap that aligns with your personal goals and values.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 text-center border-0 shadow-sm">
+              <div class="card-body">
+                <i class="bi bi-heart-fill display-4 text-primary mb-3"></i>
+                <h5 class="card-title">Personal Coaching</h5>
+                <p class="card-text">
+                  Focused on your personal growth, mindset, and self-leadership. From building resilience to mastering emotional intelligence, I’ll guide you toward greater fulfillment and self-empowerment.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-
-        <div class="service-item mb-4">
-          <h4>Executive Coaching</h4>
-          <p>Designed for senior leaders seeking to enhance their leadership presence, decision-making, and strategic vision. Together, we’ll help you lead with clarity, confidence, and impact by harnessing your Energy Exchange Quotient (EEQ™) to intentionally influence every conversation, decision, and relationship.</p>
-        </div>
-
-        <div class="service-item mb-4">
-          <h4>Career Coaching</h4>
-          <p>Whether you’re transitioning into a new role, aiming for career advancement, or looking for greater work-life balance, I’ll help you develop a roadmap for success that aligns with your personal goals and values.</p>
-        </div>
-
-        <div class="service-item mb-4">
-          <h4>Personal Coaching</h4>
-          <p>This coaching is focused on your personal growth, mindset, and self-leadership. From building resilience to mastering emotional intelligence, I’ll guide you toward greater fulfillment and self-empowerment.</p>
-        </div>
-      </div><!-- End Coaching Pane -->
+      </div>
 
       <!-- Communication Pane -->
-      <div
-        class="tab-pane fade"
-        id="help-communication"
-        role="tabpanel"
-        aria-labelledby="help-communication-tab"
-      >
-        <div class="tab-header text-center mb-4">
-          <h3>Communication</h3>
+      <div class="tab-pane fade" id="pill-communication" role="tabpanel">
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100 text-center border-0 shadow-sm">
+              <div class="card-body">
+                <i class="bi bi-mic-fill display-4 text-primary mb-3"></i>
+                <h5 class="card-title">Public Speaking</h5>
+                <p class="card-text">
+                  Learn to confidently speak in front of any audience, deliver compelling presentations, and engage listeners—from small meetings to keynote speeches.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 text-center border-0 shadow-sm">
+              <div class="card-body">
+                <i class="bi bi-person-badge-fill display-4 text-primary mb-3"></i>
+                <h5 class="card-title">Executive Presence</h5>
+                <p class="card-text">
+                  Develop a commanding presence that inspires confidence and trust in every interaction—mastering body language, vocal tone, and the energy you project.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 text-center border-0 shadow-sm">
+              <div class="card-body">
+                <i class="bi bi-shield-lock-fill display-4 text-primary mb-3"></i>
+                <h5 class="card-title">Conflict &amp; Negotiation</h5>
+                <p class="card-text">
+                  Communication isn’t just speaking—it’s also resolving conflicts and finding win-win solutions. Learn to handle sensitive conversations and negotiate effectively.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-
-        <div class="service-item mb-4">
-          <h4>Public Speaking</h4>
-          <p>Learn how to confidently speak in front of any audience, deliver compelling presentations, and engage with your listeners. Whether it's a small meeting or a keynote speech, I’ll help you leave a lasting impact.</p>
-        </div>
-
-        <div class="service-item mb-4">
-          <h4>Executive Presence</h4>
-          <p>We’ll work on developing a commanding presence that inspires confidence and trust in every interaction. This includes mastering body language, vocal tone, and the energy you project.</p>
-        </div>
-
-        <div class="service-item mb-4">
-          <h4>Conflict Management & Negotiation</h4>
-          <p>Communication isn’t just about speaking — it’s also about resolving conflicts and finding win-win solutions. I’ll teach you how to handle sensitive conversations, negotiate effectively, and manage disputes with ease.</p>
-        </div>
-      </div><!-- End Communication Pane -->
+      </div>
 
       <!-- Teams Pane -->
-      <div
-        class="tab-pane fade"
-        id="help-teams"
-        role="tabpanel"
-        aria-labelledby="help-teams-tab"
-      >
-        <div class="tab-header text-center mb-4">
-          <h3>Teams</h3>
+      <div class="tab-pane fade" id="pill-teams" role="tabpanel">
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100 text-center border-0 shadow-sm">
+              <div class="card-body">
+                <i class="bi bi-people-fill display-4 text-primary mb-3"></i>
+                <h5 class="card-title">Leadership Coaching</h5>
+                <p class="card-text">
+                  I’ll help your leaders develop the emotional intelligence, decision-making skills, and leadership style needed to inspire and drive results.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 text-center border-0 shadow-sm">
+              <div class="card-body">
+                <i class="bi bi-people display-4 text-primary mb-3"></i>
+                <h5 class="card-title">Team Coaching</h5>
+                <p class="card-text">
+                  High-performing teams are built on trust, collaboration, and alignment. Let’s strengthen relationships and develop shared goals for success.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 text-center border-0 shadow-sm">
+              <div class="card-body">
+                <i class="bi bi-arrow-repeat display-4 text-primary mb-3"></i>
+                <h5 class="card-title">Change Management</h5>
+                <p class="card-text">
+                  In times of change, effective leadership and communication are essential. I’ll guide your team through transitions, maintaining motivation and cohesion.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
 
-        <div class="service-item mb-4">
-          <h4>Leadership Coaching</h4>
-          <p>I’ll work with your leaders to help them develop the emotional intelligence, decision-making skills, and leadership style needed to inspire and drive results within their teams.</p>
-        </div>
-
-        <div class="service-item mb-4">
-          <h4>Team Coaching</h4>
-          <p>High-performing teams are built on trust, collaboration, and alignment. Through team coaching, I’ll help your group navigate challenges, strengthen relationships, and develop shared goals for success.</p>
-        </div>
-
-        <div class="service-item mb-4">
-          <h4>Change Management & Transformation</h4>
-          <p>In times of change, effective leadership and communication are essential. I’ll guide your team through transitions, helping them adapt to new directions, processes, or cultures while maintaining motivation and cohesion.</p>
-        </div>
-      </div><!-- End Teams Pane -->
-
-    </div><!-- End Tab Content -->
+    </div>
   </div>
 </section><!-- End Help Section -->
 
-<!-- FAQ Section -->
-<section id="faq" class="faq section">
-  <!-- Section Title -->
-  <div class="container section-title" data-aos="fade-up">
-    <h2>Frequently Asked Questions</h2>
-  </div><!-- End Section Title -->
 
+<!-- FAQ Section -->
+<section id="faq" class="faq section bg-light">
+  <div class="container section-title" data-aos="fade-up">
+    <h1>Frequently Asked Questions</h1>
+  </div>
   <div class="container" data-aos="fade-up" data-aos-delay="100">
-    <div class="accordion" id="faqAccordion">
+    <div class="accordion accordion-flush" id="faqAccordion">
 
       <!-- FAQ Item 1 -->
-      <div class="accordion-item mb-3">
+      <div class="accordion-item border-0 border-bottom">
         <h2 class="accordion-header" id="faqHeadingOne">
           <button
-            class="accordion-button"
+            class="accordion-button collapsed fs-5 fw-bold text-primary bg-white"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#faqCollapseOne"
-            aria-expanded="true"
+            aria-expanded="false"
             aria-controls="faqCollapseOne"
           >
+            <i class="bi bi-question-circle-fill me-2"></i>
             How does NLP work?
           </button>
         </h2>
         <div
           id="faqCollapseOne"
-          class="accordion-collapse collapse show"
+          class="accordion-collapse collapse"
           aria-labelledby="faqHeadingOne"
           data-bs-parent="#faqAccordion"
         >
-          <div class="accordion-body">
-            NLP (Neuro-Linguistic Programming) coaching helps individuals identify and
-            shift limiting beliefs, change behavioral patterns, and reprogram their mindset.
-            By understanding how you think, communicate, and behave, NLP allows you to unlock
-            your potential, overcome challenges, and improve both personal and professional outcomes.
+          <div class="accordion-body fs-6">
+            NLP (Neuro-Linguistic Programming) coaching helps individuals identify and shift limiting beliefs,
+            change behavioral patterns, and reprogram their mindset. By understanding how you think,
+            communicate, and behave, NLP allows you to unlock your potential, overcome challenges,
+            and improve both personal and professional outcomes.
           </div>
         </div>
-      </div><!-- End FAQ Item 1 -->
+      </div>
 
       <!-- FAQ Item 2 -->
-      <div class="accordion-item mb-3">
+      <div class="accordion-item border-0 border-bottom">
         <h2 class="accordion-header" id="faqHeadingTwo">
           <button
-            class="accordion-button collapsed"
+            class="accordion-button collapsed fs-5 fw-bold text-primary bg-white"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#faqCollapseTwo"
             aria-expanded="false"
             aria-controls="faqCollapseTwo"
           >
+            <i class="bi bi-question-circle-fill me-2"></i>
             How do I know if team coaching is right for my team?
           </button>
         </h2>
@@ -407,26 +462,27 @@ I believe that great leadership starts from within — it’s about mastering yo
           aria-labelledby="faqHeadingTwo"
           data-bs-parent="#faqAccordion"
         >
-          <div class="accordion-body">
-            Team coaching is ideal when your team faces challenges such as poor communication,
-            low morale, or lack of alignment. It’s designed to enhance collaboration,
-            strengthen relationships, and ensure everyone is aligned with shared goals.
-            If your team is ready to grow together and overcome obstacles, team coaching can be transformative.
+          <div class="accordion-body fs-6">
+            Team coaching is ideal when your team faces challenges such as poor communication, low morale,
+            or lack of alignment. It’s designed to enhance collaboration, strengthen relationships,
+            and ensure everyone is aligned with shared goals. If your team is ready to grow together
+            and overcome obstacles, team coaching can be transformative.
           </div>
         </div>
-      </div><!-- End FAQ Item 2 -->
+      </div>
 
       <!-- FAQ Item 3 -->
-      <div class="accordion-item mb-3">
+      <div class="accordion-item border-0 border-bottom">
         <h2 class="accordion-header" id="faqHeadingThree">
           <button
-            class="accordion-button collapsed"
+            class="accordion-button collapsed fs-5 fw-bold text-primary bg-white"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#faqCollapseThree"
             aria-expanded="false"
             aria-controls="faqCollapseThree"
           >
+            <i class="bi bi-question-circle-fill me-2"></i>
             What can I expect during a coaching session?
           </button>
         </h2>
@@ -436,28 +492,28 @@ I believe that great leadership starts from within — it’s about mastering yo
           aria-labelledby="faqHeadingThree"
           data-bs-parent="#faqAccordion"
         >
-          <div class="accordion-body">
-            During a coaching session, we will focus on your specific goals and challenges.
-            Sessions are interactive, with open discussion, reflection, and practical tools
-            you can apply immediately. We’ll also work on strengthening your Energy Exchange
-            Quotient (EEQ™), helping you become more intentional about the energy you bring
-            into every interaction. You’ll leave each session with actionable insights,
-            strategies, and a deeper sense of presence and impact.
+          <div class="accordion-body fs-6">
+            During a coaching session, we will focus on your specific goals and challenges. Sessions
+            are interactive, with open discussion, reflection, and practical tools you can apply immediately.
+            We’ll also work on strengthening your Energy Exchange Quotient (EEQ™), helping you become more
+            intentional about the energy you bring into every interaction. You’ll leave each session with
+            actionable insights, strategies, and a deeper sense of presence and impact.
           </div>
         </div>
-      </div><!-- End FAQ Item 3 -->
+      </div>
 
       <!-- FAQ Item 4 -->
-      <div class="accordion-item">
+      <div class="accordion-item border-0">
         <h2 class="accordion-header" id="faqHeadingFour">
           <button
-            class="accordion-button collapsed"
+            class="accordion-button collapsed fs-5 fw-bold text-primary bg-white"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#faqCollapseFour"
             aria-expanded="false"
             aria-controls="faqCollapseFour"
           >
+            <i class="bi bi-question-circle-fill me-2"></i>
             How long does coaching take to show results?
           </button>
         </h2>
@@ -467,18 +523,18 @@ I believe that great leadership starts from within — it’s about mastering yo
           aria-labelledby="faqHeadingFour"
           data-bs-parent="#faqAccordion"
         >
-          <div class="accordion-body">
-            Coaching is a process, and the time it takes to see results depends on your goals
-            and commitment. Some individuals see noticeable changes in just a few sessions,
-            while others may take longer to achieve their desired outcomes. However, the key
-            is consistency — the more committed you are to applying what you learn, the faster the transformation.
+          <div class="accordion-body fs-6">
+            Coaching is a process, and the time it takes to see results depends on your goals and commitment.
+            Some individuals see noticeable changes in just a few sessions, while others may take longer to
+            achieve their desired outcomes. However, the key is consistency — the more committed you are
+            to applying what you learn, the faster the transformation.
           </div>
         </div>
-      </div><!-- End FAQ Item 4 -->
+      </div>
 
     </div>
   </div>
-</section><!-- End FAQ Section -->
+</section>
 
     <!-- Testimonials Section -->
     <section id="testimonials" class="testimonials section light-background">
@@ -760,13 +816,13 @@ I believe that great leadership starts from within — it’s about mastering yo
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Yummy</strong> <span>All Rights Reserved</span></p>
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Uday Nair</strong> <span>All Rights Reserved</span></p>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you've purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a href="https://themewagon.com">ThemeWagon</a>
+        
       </div>
     </div>
 
